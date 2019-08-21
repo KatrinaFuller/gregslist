@@ -8,6 +8,6 @@ let _jobService = new JobService()
 // PUBLIC
 export default class JobController {
   constructor() {
-    console.log("Hello from Job Controller")
+    // console.log("Hello from Job Controller")
   }
 }

@@ -10,6 +10,6 @@ let _state = {
 // PUBLIC
 export default class JobService {
   constructor() {
-    console.log("Hello from Job Service")
+    // console.log("Hello from Job Service")
   }
 }

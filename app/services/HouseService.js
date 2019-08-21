@@ -21,7 +21,19 @@ export default class HouseService {
     console.log("Hello from House Service")
   }
 
-  get House() {
+  get Houses() {
     return _state.houses.map(house => new House(house))
+  }
+
+  addHouse(newHouse) {
+    _state.houses.push(new House(newHouse))
+  }
+
+  deleteHouse(id) {
+    _state.houses.forEach((house, i) => {
+      if (house._id == id) {
+        _state.houses.splice(i, 1)
+      }
+    })
   }
 }

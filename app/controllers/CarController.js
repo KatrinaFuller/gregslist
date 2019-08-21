@@ -39,4 +39,9 @@ export default class CarController {
     _carService.addCar(newCar)
     _draw()
   }
+
+  deleteCar(id) {
+    _carService.deleteCar(id)
+    _draw()
+  }
 }

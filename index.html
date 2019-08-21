@@ -53,6 +53,50 @@
     <div id="cars" class="row">
 
     </div>
+
+    <!-- houses -->
+    <div class="row justify-content-center">
+      <h1 class="col-12">Make a House!</h1>
+      <form onsubmit="app.controllers.carController.addCar(event)" class="col-5">
+        <div class="form-group">
+          <label for="street">Street</label>
+          <input type="text" class="form-control" name="street" id="street" placeholder="Type in a street name"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" name="city" id="city" placeholder="Type in the city" required>
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">Bedrooms</label>
+          <input type="number" min="0" max="7" class="form-control" name="bedrooms" id="bedrooms"
+            placeholder="Number of bedrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="bathrooms">Bathrooms</label>
+          <input type="number" min="0" max="7" class="form-control" name="bathrooms" id="bathrooms"
+            placeholder="Number of bathrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" class="form-control" name="price" id="price" placeholder="Price of the house" required>
+        </div>
+        <div class="form-group">
+          <label for="squarefeet">Square Feet</label>
+          <input type="number" class="form-control" name="squarefeet" id="squarefeet"
+            placeholder="Number of square feet" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in the image address"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make House</button>
+      </form>
+    </div>
+    <div id="cars" class="row">
+
+    </div>
   </div>
 
   <script src="app/main.js" type="module"></script>

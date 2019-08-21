@@ -3,7 +3,14 @@ import Job from "../models/Job.js";
 
 // PRIVATE
 let _state = {
-  jobs: [new Job()]
+  jobs: [new Job({
+    company: "Dennis Dillon",
+    jobTitle: "car deals",
+    pay: 50,
+    hours: 40,
+    location: "Boise",
+    imgUrl: "https://di-uploads-development.dealerinspire.com/dennisdillondcj/uploads/2018/04/DennisDillonOGImage.png"
+  })]
 }
 
 

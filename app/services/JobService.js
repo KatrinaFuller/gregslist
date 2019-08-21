@@ -13,6 +13,7 @@ export default class JobService {
     // console.log("Hello from Job Service")
   }
 
+  // makes a copy of the job
   get Jobs() {
     return _state.jobs.map(job => new Job(job))
   }

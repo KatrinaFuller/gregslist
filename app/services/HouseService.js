@@ -18,7 +18,7 @@ let _state = {
 // PUBLIC
 export default class HouseService {
   constructor() {
-    console.log("Hello from House Service")
+    // console.log("Hello from House Service")
   }
 
   get Houses() {

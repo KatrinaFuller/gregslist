@@ -20,5 +20,7 @@ function _draw() {
 export default class JobController {
   constructor() {
     // console.log("Hello from Job Controller")
+
   }
+
 }

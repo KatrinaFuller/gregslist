@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <title>GregsList</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h1 class="col-12">Make a Car!</h1>
+      <form onsubmit="app.controllers.carController.addCar(event)" class="col-5">
+        <div class="form-group">
+          <label for="make">Make</label>
+          <input type="text" class="form-control" name="make" id="make" placeholder="Type in a make" required>
+        </div>
+        <div class="form-group">
+          <label for="model">Model</label>
+          <input type="text" class="form-control" name="model" id="model" placeholder="Type in a model" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" min="1890" max="2022" class="form-control" name="year" id="year"
+            placeholder="Type in a year" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" placeholder="Type in a price" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description"
+            placeholder="Type in a description" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make Car</button>
+      </form>
+    </div>
+    <div id="cars" class="row">
+
+    </div>
+  </div>
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 import JobService from "../services/JobService.js";
 import CarService from "../services/CarService.js";
+import HouseService from "../services/HouseService.js";
 
 
 // PRIVATE
@@ -23,4 +24,20 @@ export default class JobController {
 
   }
 
+  addJob(event) {
+    event.preventDefault()
+    let form = event.target
+
+    let newJob = {
+      company: form.company.value,
+      jobTitle: form.jobTitle.value,
+      pay: form.pay.value,
+      hours: form.hours.value,
+      location: form.location.value,
+      imgUrl: form.imgUrl.value
+    }
+
+    _jobService.addJob(newJob)
+    _draw()
+  }
 }
